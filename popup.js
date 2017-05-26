@@ -32,6 +32,7 @@ function sendForm() //'send' button's functionality
 
 function proceed(z) //saves input into local storage and sends it to event.js
 {
-    localStorage.setItem("bName", z);     
+    var s = parseFloat(z);
+    localStorage.setItem("bName", s);     
     window.location = "userBudget.html";
 }
