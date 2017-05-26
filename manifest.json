@@ -10,16 +10,12 @@
   
 "permissions": [
    "activeTab"
-   ]
+   ],
+   
+ "icons": {       
+     "16": "icon.png",
+     "48": "icon.png",
+    "128": "icon.png"
+ }
 
-"content_scripts": [
-  {
-    "matches": [
-      "https://reddit.com/r/EarthPorn/*", "http://reddit.com/r/EarthPorn/*"
-    ],
-    "js": ["content.js"]
-    
-  }
-  
-]
 }
