@@ -53,8 +53,6 @@ localStorage.setItem("bName", newBudget);
 
 }
 
-chrome.contextMenus.removeAll(function() {
-
 chrome.contextMenus.create({
   title: "Deduct from budget", 
   contexts:["selection"], 
@@ -67,4 +65,3 @@ chrome.contextMenus.create({
   onclick: addition,
 });
 
-});

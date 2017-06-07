@@ -3,19 +3,32 @@
     <head>
         <title>Orange Gate</title>
         <link href="format.css" type="text/css" rel="stylesheet" />
-        <script type="text/Javascript" src="event.js"></script>
-		<script type="text/Javascript" src="budget.js"></script>
+        <script type="text/Javascript" src="popup.js"></script>
+		<script type="text/Javascript" src="event.js"></script>
     </head>
     <body>
     <div id = "wrapper">
         
         <div id = "header"> <!--Instructions-->
-        <h1> Budget Tool</h1>
+        <h1> Budget Buddy </h1>
             <p>Use this tool to shop while keeping track of your budget!</p>
         </div>
-        
+		
+		 
         <div id = "output">
+		<p>Current Budget:</p><br>
         <p id = "bOutput"></p>
+        </div>
+        
+        <div id = "field">
+        <form id = "input">
+        <fieldset id = "information">
+            <!--Text box-->
+            <label for="butdget"> Change initial budget: <input id="budget" type="text" name="budget" class="form"></label> <span id="bg" class="empty"></span><br>
+            <!--Submit button-->
+            <input class="buttons" id="send" type="button" value="Submit">
+        </fieldset>
+        </form>
         </div>
         
     </div>    

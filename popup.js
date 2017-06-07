@@ -2,37 +2,39 @@ document.addEventListener('DOMContentLoaded', function() {
     var link = document.getElementById('send');
     // onClick's logic below:
     link.addEventListener('click', function() {
-        sendForm(); //starts the function when the 'send' button is clicked
+        sendForm();
+		
     });
+	var _budget = localStorage.getItem("bName");
+    document.getElementById("bOutput").innerHTML = "$" + _budget;
 });
 
-
-function sendForm() //'send' button's functionality
+function sendForm()
 {
-    var z = document.getElementById('budget').value; //input by the user
+    var z = document.getElementById('budget').value;
     
-    if (z=="") //If the user clicks the button with no input
+    if (z=="")
     {
         document.getElementById('budget').style.border="5px solid red";
         document.getElementById('bg').innerHTML="Please enter a budget"; 
     }
     else         
-		if(/^\d+(\.\d+)?$/.test(z)) //if the user enters only decimals and/or integers
+		if(/^\d+(\.\d+)?$/.test(z))
 		{
 			proceed(z);
 			return false;
 		}
-		else //if the user does not enter decimals and/or integers
+		else
 		{
-			document.getElementById('budget').style.border="5px solid red"; 
+			document.getElementById('budget').style.border="5px solid red";
 			document.getElementById('bg').innerHTML="Please enter only numbers!";   
 			
 		}
 }
 
-function proceed(z) //saves input into local storage and sends it to event.js
+function proceed(z)
 {
-    var s = parseFloat(z);
+	 var s = parseFloat(z);
     localStorage.setItem("bName", s);     
     window.location = "userBudget.html";
 }
