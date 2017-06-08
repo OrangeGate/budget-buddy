@@ -1,41 +1,80 @@
 body {
-  background-color: #D6EBFF;
-  color: white;
-  font: 12pt "Tahoma", "Arial", sans-serif;
+ 	background-color: white;
+  	color: white;
+  	font: 12pt "Tahoma", "Arial", sans-serif;
     }
     
 #wrapper{
-	margin-left: auto;
-	margin-right: auto;
-	
+	margin: auto;
 	}
 	
 #header{
 	background-color: #3399FF;
 	text-align: center;
-	padding: 10px;
 	
+	display:block;
+	height:240px;
+	width:200px;
+	border:1px solid black;
 	}
-	
+h3{
+	margin:10px;
+	text-align:center;
+}
+h5{
+	margin:5px;
+}
+ul{
+	text-align:left;
+	margin-left:-7px
+}
+h1{
+	color:red;
+	text-decoration:underline;
+}	
 #input{
+	display:block;
 	background-color: white;
 	color: black;
 	text-align: center;
+	height:80px;
+	width:200px;
 	}
-	
+
 #output{
+	text-align:center;
+	display:block;
     	background-color: white;
 	color: black;
-	text-align: center;
+	height:90px;
+	width:200px;
+	
 	}
 
+.buttons:hover{
+	background: #0099ff;
+	color: white;
+   	margin-left: auto;
+  	margin-right: auto;
+  	clear: both;
+	}
+	
+	 
 .buttons{
-   margin-left: auto;
-   margin-right: auto;
-   background-color: white;
-      clear: both;
-	}
+	background: #00ccff;
+	color: white;
+	border: 2px solid #eee;
+	border-radius: 20px;
+	box-shadow:  10px 10px 10px #eee;
+	text-shadow:none;
+	font-size: 20px;
+	font-family: Tahoma,Verdana,Segoe,sans-serif;
+	font-weight: bold;
+}
 
+input[type=text], select {
+    margin: 5px 0;
 
+}
 
 
